@@ -74,10 +74,10 @@ camera_config_t config;
 کدهای زیر رو کپی پیست کنید و یا بصورت زیر تغییر دهید
  camera_config_t config;
 
+'''c++
+ config.ledc_channel = LEDC_CHANNEL_0;
 
-\\\ config.ledc_channel = LEDC_CHANNEL_0;
-
-config.ledc_timer = LEDC_TIMER_0;
+ config.ledc_timer = LEDC_TIMER_0;  
 
 config.pin_d0 = Y2_GPIO_NUM;
 
@@ -129,5 +129,6 @@ config.fb_count = 2;
 
 config.grab_mode = CAMERA_GRAB_LATEST;
 
-config.fb_location = CAMERA_FB_IN_PSRAM; \\\
+config.fb_location = CAMERA_FB_IN_PSRAM;
+'''
 
