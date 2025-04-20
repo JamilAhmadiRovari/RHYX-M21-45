@@ -1,11 +1,11 @@
 # RHYX-M21-45
 RHYX M21-45
 
-متاسفانه بسیاری فروشندگان داخلی ماژول ESP32-cam را همراه با دوربین OV2640 عرضه نمیکنند هر چند که در مشخصات فروش ماژول دوربین OV2640 رو ارائه میدهند 
+ متاسفانه بسیاری فروشندگان داخلی ماژول ESP32-cam را همراه با دوربین OV2640 عرضه نمیکنند هر چند که در مشخصات فروش ماژول دوربین OV2640 رو ارائه میدهند 
 
-دوربین RHYX M21-45 یک دوربین با رزولیشن پایین هست و 2 مگا پیکسل هم نیست که متاسفانه با گشتن در اینترنت بسیاری با این دروبین مشکل داشتند و حتی DataSheet و رفرنسی برای این دوربین پیدا نکردم 
+ دوربین RHYX M21-45 یک دوربین با رزولیشن پایین هست و 2 مگا پیکسل هم نیست که متاسفانه با گشتن در اینترنت بسیاری با این دروبین مشکل داشتند و حتی DataSheet و رفرنسی برای این دوربین پیدا نکردم 
 
-که متاسفانه  خودم تجربه بدی ازش دارم که حتی در راه اندازی آن به مشکل برخوردم 
+ که متاسفانه  خودم تجربه بدی ازش دارم که حتی در راه اندازی آن به مشکل برخوردم 
 
 تجربه شخصی من با این دوربین 
 
@@ -72,10 +72,10 @@ RHYX M21-45
 camera_config_t config;
 
 کدهای زیر رو کپی پیست کنید و یا بصورت زیر تغییر دهید
-'''camera_config_t config;
+ camera_config_t config;
 
 
-config.ledc_channel = LEDC_CHANNEL_0;
+\\\ config.ledc_channel = LEDC_CHANNEL_0;
 
 config.ledc_timer = LEDC_TIMER_0;
 
@@ -123,11 +123,11 @@ config.frame_size = FRAMESIZE_QQVGA; // Lower resolution to reduce lag
 
 //config.frame_size = FRAMESIZE_VGA; //higher frame rate //buffers a little
 
-config.jpeg_quality = 10;
+config.jpeg_quality = 10; 
 
 config.fb_count = 2;
 
 config.grab_mode = CAMERA_GRAB_LATEST;
 
-config.fb_location = CAMERA_FB_IN_PSRAM;'''
+config.fb_location = CAMERA_FB_IN_PSRAM; \\\
 
