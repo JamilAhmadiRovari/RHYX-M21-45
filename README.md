@@ -57,7 +57,7 @@ RHYX M21-45
 
 
 
-نحوه راه اندازی RHYX M21-45 در اردینو Ardiniuo    
+نحوه راه اندازی RHYX M21-45 در اردینو Arduino    
 در بخش     
 // ===================
 // Select camera model
