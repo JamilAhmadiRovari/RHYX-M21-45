@@ -62,9 +62,9 @@ RHYX M21-45
 // ===================
 // Select camera model
 // ===================
-
-#define CAMERA_MODEL_AI_THINKER  // Has PSRAM 
-
+```
+#define CAMERA_MODEL_AI_THINKER  // Has PSRAM
+```
 انتخاب شود 
 
 در بخش 
@@ -72,9 +72,9 @@ RHYX M21-45
 camera_config_t config;
 
 کدهای زیر رو کپی پیست کنید و یا بصورت زیر تغییر دهید
+```C
  camera_config_t config;
 
-'''c++
  config.ledc_channel = LEDC_CHANNEL_0;
 
  config.ledc_timer = LEDC_TIMER_0;  
@@ -113,15 +113,15 @@ config.pin_reset = RESET_GPIO_NUM;
 
 //config.xclk_freq_hz = 20000000; high
 
-config.xclk_freq_hz = 10000000; // Try reducing the clock frequency to reduce frame rate
+config.xclk_freq_hz = 10000000; 
 
 config.pixel_format = PIXFORMAT_RGB565;
 
-config.frame_size = FRAMESIZE_QQVGA; // Lower resolution to reduce lag
+config.frame_size = FRAMESIZE_QQVGA; 
 
-//config.frame_size = FRAMESIZE_QVGA; //this is lower than VGA but higher than QQVGA
+//config.frame_size = FRAMESIZE_QVGA;
 
-//config.frame_size = FRAMESIZE_VGA; //higher frame rate //buffers a little
+//config.frame_size = FRAMESIZE_VGA;
 
 config.jpeg_quality = 10; 
 
@@ -130,5 +130,5 @@ config.fb_count = 2;
 config.grab_mode = CAMERA_GRAB_LATEST;
 
 config.fb_location = CAMERA_FB_IN_PSRAM;
-'''
+```
 
